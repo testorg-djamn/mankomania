@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.Board">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.mankomania.screens.ZoomLayout
+            android:id="@+id/zoom_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                
+
+
+                <ImageView
+                    android:id="@+id/gameboard"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/gameboard">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/player_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/spielfigurblau">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/player_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/spielfigurgruen">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/player_purple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/spielfigurlila">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/player_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/spielfigurrot">
+                </ImageView>
+
+
+
+
+            </FrameLayout>
+        </com.example.mankomania.screens.ZoomLayout>
+
+        <include layout="@layout/toolbar_layout" />
+
+        <TextView
+            android:id="@+id/Board_Messages"
+            android:layout_width="match_parent"
+            android:layout_height="361dp"
+            android:alpha="1"
+            android:background="#FFFFFF"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
